@@ -8,6 +8,8 @@ A **HashMap** stores key-value pairs so you can look up a value quickly using it
 
 For example, if both `"apple" -> 1` and `"banana" -> 2` hash to **Bucket 2**, both entries can live in that same bucket.
 
+![HashMap bucket holding multiple linked entries](hashmap-bucket-entries.png)
+
 ## Concurrent Insertions into the Same Bucket
 Suppose two threads insert two different keys (`"apple" -> 1` and `"banana" -> 2`) into the same bucket at the exact same time:
 
